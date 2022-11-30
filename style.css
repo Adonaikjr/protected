@@ -94,10 +94,12 @@ footer{
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    align-items: center;
 }
 footer>p{
     margin: 0 auto;
     margin-top: 157px;
     width: 568px;
     height: 55px;
+  
 }
