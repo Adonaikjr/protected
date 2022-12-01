@@ -39,6 +39,7 @@ header {
 }
 nav {
   display: flex;
+  flex-wrap: wrap;
   border: solid transparent;
 }
 ul {
