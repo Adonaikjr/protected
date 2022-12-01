@@ -1,105 +1,129 @@
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-:root { /* estilização geral da página */
-    --cor-font-p:#D9D9D9;
-    --cor-title:#FFFFFF;
-    --cor-tifany: #00BFA6;
-    --cor-background:#2F2E41;
-  }
-:link{
-    text-decoration: none;
-    color: var(--cor-font-p);
+:root {
+  /* estilização geral da página */
+  --cor-font-p: #d9d9d9;
+  --cor-title: #ffffff;
+  --cor-tifany: #00bfa6;
+  --cor-background: #2f2e41;
 }
-a:hover {text-decoration: underline;
-    color: var(--cor-tifany);
-    font-size:110%;
-    }
-  body{
-    margin: 0 auto;
-    height: 100vh;
-    background-color: var(--cor-background);
-    max-width: 1280px;
-  }
-  nav{
-    margin-top: 30px;
-    font-family: JetBrains Mono;
-font-size: 14px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
-
-  }
-  ul, li{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    color: var(--cor-font-p);
-  }
-  li>img{
-    margin-right: 30rem;
-  }
-  h1>span{
-    color: var(--cor-tifany);
-  }
-  h1{
-    font-family: JetBrains Mono;
-font-size: 36px;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: 0em;
-text-align: center;
-color: var(--cor-title);
-  }
-p {
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
-color: var(--cor-font-p);
+:link {
+  text-decoration: none;
+  color: var(--cor-font-p);
 }
-p >strong{
-    font-family: Open Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
-color: var(--cor-tifany);
+a:hover {
+  text-decoration: underline;
+  color: var(--cor-tifany);
+  font-size: 110%;
 }
-i{
-    color: var(--cor-title);
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: var(--cor-background);
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+ 
 }
-main{
-    margin-top: 112px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+header {
+  border: solid transparent;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 98px;
+  margin-right: 99px;
+  margin-top: 71px;
 }
-main>img{
-    margin-right: 100px;
+nav {
+  display: flex;
+  border: solid transparent;
 }
-footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    align-items: center;
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid transparent;
+  height: 30.04878044128418px;
+  width: 19.125rem;
+  list-style: none;
 }
-footer>p{
-    margin: 0 auto;
-    margin-top: 157px;
-    width: 568px;
-    height: 55px;
+main {
+  border: solid transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 101px;
+ 
   
+}
+
+@media(max-width: 1254px) {
+ main{
+    justify-content: center;
+ }   
+}
+h1 {
+  font-family: JetBrains Mono;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--cor-title);
+}
+span {
+  color: var(--cor-tifany);
+}
+section {
+  margin-top: 3.68rem;
+  border: solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 10.5rem;
+  width: 37.75rem;
+}
+p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--cor-font-p);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+footer {
+  margin-top: 157px;
+  border: solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-font-p);
+}
+article {
+  font-family: JetBrains Mono;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-top: solid 1px var(--cor-tifany);
+}
+main, footer {
+  margin-right: 89px;
+  margin-left: 99px;
 }
