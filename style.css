@@ -86,7 +86,7 @@ section {
   justify-content: space-around;
   text-align: center;
   height: 10.5rem;
-  width: 37.75rem;
+  width: 100%;
 }
 p {
   font-family: Open Sans;
